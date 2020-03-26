@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Arreglos
+
+        let meses = new Array('Enero', 'Febrero', 'Marzo', 'Abril')
+        // console.log(meses.length)
+        // console.log(Array.isArray(meses))Comprobamos si es un array
+
+        // como agregar areglos 
+
+        meses[4]= 'Mayo';
+        meses.push('Junio');
+
+        //agrergar elementos al principio de un arreglo 
+
+        meses.unshift('Meses')
+
+        //como eliminar elementos de un arreglo 
+        meses.pop();
+
+        //como eliminar elementos de un arreglo del pricipio
+        meses.shift();
+
+        //elimina un elemento en sierta posision 
+
+        meses.splice(2,1)
+
+
+        // console.log(meses)
+
+        const frutas = ['Manzana', 'Platano', 'Fresa', 'Naranja', 'Zanahoria'];
+        //como ordenar de froma alfabetica los array
+        frutas.sort();
+        // console.log(frutas)
+
+        //ordenar numeros 
+
+        let numeros = [3, 90, 100, 50 , 56, 23, 1, 2, 25];
+
+        numeros.sort(function(a,b){
+            return a - b;
+        })
+
+        console.log(numeros)
+
+
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const pendientes = ['Tareas','Comer', 'proyectos', 'Aprender'];
+
+        pendientes.forEach(function(pendiente, index){
+            console.log(pendiente ,index)
+
+        });
+
+        let tareas = pendientes.map(function(pendientes){
+            return pendientes
+
+        })
+
+        console.log(tareas)
+
+        const automovil = {
+            modelo: 'camaro',
+            motor: 6.1,
+            año: 1960,
+            marca: 'chevrolet'
+        }
+
+        for(auto in automovil){
+            console.log(`${auto} : ${automovil[auto]}`)
+        }
+
+        const ciudades = ['Londres', 'New York', 'Madrid', 'Paris']
+        const ordenes = [123, 321, 213, 131]
+
+        // for(let entradas of ordenes){
+        //     console.log(entradas)
+        // }
+
+        // for(let entradas of ordenes.entries()){
+        //     console.log(entradas)
+        // }
+
+        let ubicacion = window.navigator;
+        console.log(ubicacion)
+
+        // scope en js
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let persona = {
+            nombre: 'Gustavo',
+            apellido: 'Chaile',
+            profesion: 'Desarrllador Web',
+            edad: 26,
+            musica: ['Rock', 'Cuarteto', 'Cumbia'],
+            hogar: {
+                ciudad: 'Tucuman',
+                pais: 'Argentina',
+            },
+            nacimineto: function(){
+                return new Date().getFullYear() - this.edad - 1;
+            }
+
+        }
+
+        console.log(persona.nacimineto())
+
+    </script>
+</body>
+</html>

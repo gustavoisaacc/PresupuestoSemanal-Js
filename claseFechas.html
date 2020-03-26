@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let diaHoy = new Date();
+        let valor;
+
+        //Meses
+        valor = diaHoy.getMonth();
+
+        //dias numero
+        valor = diaHoy.getDate();
+        //dia de la semana
+        valor = diaHoy.getDay();
+
+        //año
+        valor = diaHoy.getFullYear();
+
+        //hora
+        valor = diaHoy.getHours();
+
+        //minutos
+        valor = diaHoy.getMinutes();
+
+        //get para obtener info set para ingresar info
+
+        valor = diaHoy.getFullYear();
+        valor = diaHoy.setFullYear(2019);
+        valor = diaHoy.getFullYear();
+
+        let musica = ['cancion 1', 'cancion 2', 'cancion 3']
+
+        for (let index = 0; index < musica.length; index++) {
+
+            console.log(musica[index])
+            
+            
+        }
+
+        console.log(valor)
+    </script>
+</body>
+</html>
