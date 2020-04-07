@@ -1,6 +1,10 @@
-const formulario = document.getElementById('formulario');
-const cotizar = new API();
+const cotizar = new API('3e122e304276ea80673d440787d74ad50e9c8c195473b6886b105031e287abfe');
+
 const ui = new Interfaz();
+
+
+//leer formulario
+const formulario = document.getElementById('formulario');
 
 
 formulario.addEventListener('submit', (e)=>{
@@ -21,7 +25,8 @@ formulario.addEventListener('submit', (e)=>{
      if(monedaSeleccionada === '' || cryptoSeleccionada  === ''){
           ui.mostrarMensaje('Debe completar los campos', 'alert alert-danger text-center')
      }else{
-          cotizar.obtenrApi()
+          
      }
 
 });
+
