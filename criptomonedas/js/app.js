@@ -25,7 +25,10 @@ formulario.addEventListener('submit', (e)=>{
      if(monedaSeleccionada === '' || cryptoSeleccionada  === ''){
           ui.mostrarMensaje('Debe completar los campos', 'alert alert-danger text-center')
      }else{
-          
+          cotizar.obteniendoValor(monedaSeleccionada,cryptoSeleccionada)
+          .then(data=>{
+               ui.mostrarResultado(data.resultado.RAW, monedaSeleccionada, cryptoSeleccionada);
+          })
      }
 
 });
